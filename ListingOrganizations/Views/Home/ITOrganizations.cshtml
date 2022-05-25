@@ -1,0 +1,33 @@
+﻿
+@{
+    List<string> organizations = new List<string>()
+    {
+        "Microsoft www.microsoft.com",
+        "CTS www.cognizant.com",
+        "Google",
+        "Amazon",
+        "TCS"
+
+    };
+}
+
+<h1>IT Organizations</h1>
+<div>
+<ul>
+@foreach(var org in organizations)
+{
+    
+        
+        if(org=="Amazon")
+        {
+            <li><b>@org</b></li>
+        }
+        else
+        {
+             <li>@org</li>
+        }
+       
+    
+}
+</ul>
+</div>
